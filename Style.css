@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+:root {
+    --BgColor: rgb(250, 238, 209);
+    --TimerColor: rgb(96, 114, 116);
+    --TimerPannelBgColor: rgb(222, 208, 182);
+    --ToolsPannelBgColor: rgb(178, 165, 155);
+    --ScrambleColor: rgb(178, 165, 155);
+}
+
+body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: var(--BgColor);
+
+    overflow: hidden;
+}
+
+.Timer {
+    display: grid;
+}
+
+.SolveTime {
+    position: relative;
+    top: 20vh;
+    text-align: center;
+
+    font-size: 30vh;
+    font-family: 'Raleway', sans-serif;
+    color: var(--TimerColor);
+}
+
+.TimesPannel {
+    position: absolute;
+
+    width: 20vw;
+    height: 70vh;
+    bottom: 0px;
+
+    border-radius: 3px;
+
+    background-color: var(--TimerPannelBgColor);
+}
+
+.ToolsPannel {
+    position: absolute;
+
+    width: 20vw;
+    height: 30vh;
+    top: 0px;
+
+    border-radius: 3px;
+
+    background-color: var(--ToolsPannelBgColor);
+}
+
+.ScrambleBar {
+    position: absolute;
+
+    width: 80vw;
+    height: 20vh;
+    top: 0px;
+    left: 20vw;
+    
+
+    border-radius: 3px;
+
+    background-color: var(--TimerPannelBgColor);
+
+    display: grid;
+}
+
+.ScrambleText{
+    align-self: center;
+    text-align: center;
+
+    font-family: 'Raleway', sans-serif;
+    color: var(--ScrambleColor);
+
+    font-size: 5vh;
+    letter-spacing: 10px;
+}
+
+.Averages {
+    position: relative;
+
+    display: grid;
+    top: 20vh;
+}
+
+.Averages span {
+    padding-top: 1vh;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: var(--ToolsPannelBgColor);
+}
